@@ -12,7 +12,7 @@ const CategoryFilter: React.FC = () => {
   const categories = ["all", ...new Set(products.map((p) => p.category))];
 
   return (
-    <div className="relative">
+    <div className="relative w-full sm:w-auto">
       <span className="absolute left-3 top-1/2 -translate-y-1/2 text-lg">
         🏷️
       </span>
@@ -23,7 +23,7 @@ const CategoryFilter: React.FC = () => {
         bg-indigo-50 text-gray-700 appearance-none
         focus:outline-none focus:border-indigo-400 focus:bg-white 
         transition-all duration-300 text-sm font-medium shadow-sm cursor-pointer
-        min-w-[160px]"
+        w-full sm:min-w-[160px]"
       >
         {categories.map((cat) => (
           <option key={cat} value={cat}>

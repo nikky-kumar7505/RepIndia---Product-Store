@@ -95,7 +95,7 @@ const Products: React.FC = () => {
             <div className="flex-1">
               <SearchBar />
             </div>
-            <div className="flex gap-4 flex-col sm:flex-row">
+            <div className="w-full flex gap-4 flex-col sm:flex-row">
               <CategoryFilter />
               <SortFilter />
             </div>

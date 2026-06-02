@@ -7,7 +7,7 @@ const SortFilter: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
 
   return (
-    <div className="relative">
+    <div className="relative w-full sm:w-auto">
       <span className="absolute left-3 top-1/2 -translate-y-1/2 text-lg">
         💰
       </span>
@@ -17,7 +17,7 @@ const SortFilter: React.FC = () => {
         bg-indigo-50 text-gray-700 appearance-none
         focus:outline-none focus:border-indigo-400 focus:bg-white 
         transition-all duration-300 text-sm font-medium shadow-sm cursor-pointer
-        min-w-[180px]"
+        w-full sm:min-w-[180px]"
       >
         <option value="">Sort by Price</option>
         <option value="low-to-high">💸 Price: Low to High</option>
